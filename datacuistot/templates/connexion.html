@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/connexion.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Connexion</title>
+	<link rel="stylesheet" type="text/css" href="connexion.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+       <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+         </label>
+         <label class="logo">DATACUISTOT
+         <img src="{% static '/css/img/logo.png' %}" height="65px" width="65px">
+         </label>
+
+            <ul>
+               <li><a  href="/">FindYourFood</a></li>
+               <li><a href="" class="active">Connexion</a></li>
+                <li><a href="../inscription">Inscription</a></li>
+                <li><a href="../apropos">A propos</a></li>
+            </ul>
+      </nav>
+   </header>
+
+<div class="body">
+    <div class="center">
+		<h1>Login </h1>
+		<form method="post">
+			<div class="txt_field">
+				<input type="text" name="username" required>
+				<span></span>
+				<label>Username</label>
+			</div>
+			<div class="txt_field">
+				<input type="password" name="password" required>
+				<span></span>
+				<label>Password</label>
+			</div>
+			<div class="pass">
+				<p>Forgot Password</p>
+			</div>
+			<input type="submit" value="login">
+			<div class="signup_link">
+				<p>Not a member?</p>
+				<a href="">Sign up</a>
+			</div>
+		</form>
+	</div>
+
+</div>
+
+
+
+<footer class = "footer" id="NosCoordonnées">
+    <div class = "container">
+        <div class="row">
+
+            <div class="footer-col">
+                <h4>Contactez-nous</h4>
+                <div class="socials-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>A propos</h4>
+                <ul>
+                    <li><a href="#">Créateurs du site</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>

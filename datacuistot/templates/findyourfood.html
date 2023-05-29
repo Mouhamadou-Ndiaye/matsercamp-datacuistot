@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/findyourfood.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>DATACUISTOT</title>
+</head>
+
+<body>
+
+<header>
+       <nav>
+         <input type="checkbox" id="check">
+
+         <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+         </label>
+
+         <label class="logo">DATACUISTOT
+         <img src="{% static '/css/img/logo.png' %}" height="65px" width="65px">
+         </label>
+
+
+
+            <ul>
+                <li><a class="active" href="/">FindYourFood</a></li>
+                <li><a href="../connexion">Connexion</a></li>
+                <li><a href="../inscription">Inscription</a></li>
+                <li><a href="apropos">A propos</a></li>
+            </ul>
+      </nav>
+   </header>
+
+<main>
+
+
+    <div class="section1">
+
+        <img src="{% static '/css/img/find.svg' %}" height="300px" width="350px">
+
+      <div>
+
+         <h1>FindYourFood avec DataCuistot</h1>
+            <br>
+
+         <h3>Trouvez votre repas sain et écologique !</h3>
+
+          <form class="plat">
+              <div class="bouton">
+                <button>Générez un plat</button>
+              </div>
+          </form>
+
+
+      </div>
+
+   </div>
+
+    <div class="section2">
+        <div class="gener">
+            <h2> Voici votre plat : </h2>
+        <hr>
+        <ul>
+            <li>{{final1}} </br></li>
+            <li>{{final2}} </br></li>
+            <li>{{final3}} </br></li>
+            <li>{{final4}} </br></li>
+        </ul>
+
+        </div>
+    </div>
+
+
+
+   <!-- Section de choix des boutons -->
+
+
+
+
+</main>
+
+<!-- Footer -->
+
+<footer class = "footer" id="NosCoordonnées">
+    <div class = "container">
+        <div class="row">
+
+            <div class="footer-col">
+                <h4>Contactez-nous</h4>
+                <div class="socials-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>A propos</h4>
+                <ul>
+                    <li><a href="#">Créateurs du site</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

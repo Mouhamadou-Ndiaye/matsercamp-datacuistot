@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*
+{
+	padding: 0;
+  	margin: 0;
+  	text-decoration: none;
+  	list-style: none;
+  	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: ghostwhite;
+
+}
+
+/*****************************************NAV*****************************************/
+
+nav
+{
+  background: white;
+  height: 100px;
+  width : 100%;
+
+}
+label.logo{
+  color: #038373;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #038373;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #038373;
+  transition: .5s;
+  color: white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #038373;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+
+    .checkbtn{
+    display: block;
+
+  }
+
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: grey;
+  }
+  #check:checked ~ ul{
+    left: 0;
+
+  }
+
+
+
+}
+
+
+/*************************************************************************************/
+
+  div.section1
+  {
+    font-size : 20px;
+    background-image: url(img/bg_wave.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    font-family : "Poppins";
+  }
+
+   div.section2
+  {
+    font-size : 20px;
+    background-image: url(img/section1.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    font-family : "Poppins";
+  }
+
+
+  div.section1 div h1
+  {
+    font-size: 2.5vw;
+  }
+  .section1 div h3
+  {
+    font-size: 2vw;
+    font-family: "Titilium Web";
+  }
+/*************************************************************************************/
+
+  .plat
+  {
+    display : flex;
+    justify-content : center;
+  }
+
+  div.bouton button
+  {
+  margin-top:200px;
+  height : fit-content;
+  width  :fit-content;
+  padding-left : 75px;
+  padding-right : 75px;
+  padding-top : 30px;
+  padding-bottom : 30px;
+  font-size : 1.5rem;
+  font-family : "Poppins";
+  cursor : pointer;
+  border-radius : 20px;
+  font-weight : bolder;
+  background-color : #00CC8E;
+  color : white;
+  box-shadow: 10px 5px 5px black;
+  transition :1.5s;
+  }
+
+  div.bouton button:hover
+  {
+
+    background-color : #A93226;
+  }
+
+  .section2
+  {
+    background-image: url(img/bg_gener.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+  }
+
+  .box
+  {
+    background-image: url(img/3.png);
+    padding: 10px;
+    box-shadow: 10px 5px 5px black;
+    width: 400px;
+    height: 420px;
+    margin: 10px;
+    text-align: center;
+    align-items: stretch;
+  }
+
+  .box label
+  {
+    font-family: "Poppins";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+
+  div.gener
+  {
+    padding : 20px;
+    border : solid black bold;
+    margin-top : 60px;
+    margin-bottom : 60px;
+    width : 600px;
+    height : auto;
+    background-image: url(img/bg_plat.png);
+    text-align : center;
+    box-shadow: 4px 5px 5px black;
+    transition : 1.5s;
+  }
+  div.gener:hover
+  {
+    background-image: url(img/mon_plat_hover.png);
+  }
+
+  input,select
+  {
+    font-family: "Poppins";
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+  }
+ .btn
+ {
+  height : 150px;
+  width  : 200px;
+  padding-left : 25px;
+  padding-right : 25px;
+  padding-top : 30px;
+  padding-bottom : 30px;
+  font-size : 1rem;
+  font-family : "Poppins";
+  border-radius : 20px;
+  font-weight : bolder;
+  background-color : #00CC8E;
+  color : white;
+  box-shadow: 10px 5px 5px black;
+  border-style : solid;
+ }
+  .sauvegarder
+  {
+    font-family: "Poppins";
+    font-size: 18px;
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    height: fit-content;
+    cursor: pointer;
+    font-weight : bolder;
+    color: white;
+    background-image: url(img/bg_save.png);
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+
+
+
+
+
+
+
+/*****************************************FOOTER**************************************/
+
+footer
+{
+  background-image: url(img/bg_footer.png);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 40px 0;
+  overflow-y: hidden;
+
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col
+{
+  width: 33%;
+  padding: 0 15px;
+}
+.container
+{
+  max-width: 1170px;
+
+  margin: auto;
+}
+
+.footer-col h4
+{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px ;
+  font-weight: 500;
+  position: relative;
+
+}
+
+
+
+.footer-col h4::before
+{
+  content: "";
+  position: absolute;
+  left:   0;
+  bottom: -10px;
+  background-color: grey;
+  height: 2px;
+  box-sizing: border-box;
+  width : 50px;
+}
+
+.footer-col ul li:not(:last-child)
+{
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a
+{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight:300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover
+{
+  color : white;
+  padding-left: 10px;
+  background-color: black;
+}
+
+.footer-col .socials-links a
+{
+  display: inline-block;
+  height : 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin : 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer-col .socials-links a:hover
+{
+  color: black;
+  background-color: white ;
+}
+
+@media(max-width:  767px)
+{
+  .footer-col
+  {
+    width: 50%;
+    margin-bottom : 30px;
+  }
+}
+@media(max-width:  574px)
+{
+  .footer-col
+  {
+    width: 100%;
+
+  }
+}
+
+
